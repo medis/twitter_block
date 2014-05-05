@@ -1,0 +1,13 @@
+twitter_block_settings:                                                                                                                                      
+  path: '/admin/config/twitter/settings'
+  defaults:
+    _form: '\Drupal\twitter_block\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+twitter_block_templates:                                                                                                                                      
+  path: '/admin/config/twitter/settings/templates'
+  defaults:
+    _form: '\Drupal\twitter_block\Form\TemplateForm'
+  requirements:
+    _permission: 'administer site configuration'

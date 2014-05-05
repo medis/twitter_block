@@ -1,0 +1,196 @@
+#twitter-wrapper {
+  background-color: #FFF;
+  color: #000;
+  height: 600px;
+  overflow-y: scroll;
+  font-size: 12px;
+  line-height: 1.4;
+  position: relative;
+}
+#twitter-wrapper .user-title a {
+  color: #333;
+  font-weight: bold;
+}
+#twitter-wrapper .user-screen {
+  color: #707070;
+}
+.twitter-title {
+  background-color: #FFF;
+  padding: 7px;
+  border-bottom: 1px solid grey;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  clear: both;
+
+  -webkit-box-shadow: 0 0 0 -3px rgba(0,0,0,0);
+  -moz-box-shadow: 0 0 0 -3px rgba(0,0,0,0);
+  box-shadow: 0 0 0 -3px rgba(0,0,0,0);
+  -webkit-transition: -webkit-box-shadow .3s ease-out;
+  -moz-transition: -moz-box-shadow .3s ease-out;
+  -ms-transition: box-shadow .3s ease-out;
+  -o-transition: box-shadow .3s ease-out;
+  transition: box-shadow .3s ease-out;
+}
+.twitter-title a {
+  font-weight: bold;
+  color: #333;
+}
+.twitter-title a:hover {
+  text-decoration: underline;
+}
+#twitter-wrapper .user-wrapper .time{
+  float: right;
+}
+#twitter-wrapper .user-wrapper .time a {
+  color: grey;
+}
+#twitter-wrapper .user-image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.twitter-bottom {
+  height: 44px;
+  background-color: #FFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #e8e8e8;
+}
+#twitter-wrapper a:hover {
+  text-decoration: underline;
+}
+#twitter-wrapper .text {
+  clear: left;
+}
+#twitter-wrapper .text a {
+  color: #0084b4;
+}
+#twitter-wrapper .tweet {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 10px 25px 10px;
+  position: relative;
+}
+#twitter-wrapper .retweeted {
+  margin-top: 10px;
+  color: grey;
+}
+#twitter-wrapper .retweeted a {
+  color: #707070;
+}
+#twitter-wrapper .tweet.last {
+  border-bottom: none;
+}
+.twitter-title .follow {
+  float: right;
+}
+#twitter-wrapper .tweet-actions {
+  position:relative;
+}
+#twitter-wrapper .tweet-actions li {
+  margin:0;
+  padding:0;
+  list-style:none;
+  position:absolute;
+  top:0;
+  height:15px;
+  display:block;
+}
+#twitter-wrapper .tweet-actions li a {
+  height:15px;
+  display:block;
+}
+
+#twitter-wrapper .tweet-actions li.ic-reply {
+  width: 19px;
+  height: 15px;
+  background: #999 url('images/twitter_sprite.png') 0 -87px;
+  right: 55px;
+}
+
+#twitter-wrapper .tweet-actions li.ic-retweet {
+  width: 22px;
+  height: 15px;
+  background: #999 url('images/twitter_sprite.png') -31px -87px;
+  right: 25px;
+}
+#twitter-wrapper .tweet-actions li.ic-fav {
+  width: 16px;
+  height: 15px;
+  background: #999 url('images/twitter_sprite.png') -60px -87px;
+  right: 0;
+}
+#twitter-wrapper .retweeted-icon {
+  width: 14px;
+  height: 16px;
+  margin-right: 4px;
+  display: block;
+  float: left;
+  background: url('images/twitter_sprite.png') -20px -2px;
+}
+
+#twitter-wrapper .tweet-actions li.ic-reply:hover,
+#twitter-wrapper .tweet-actions li.ic-retweet:hover,
+#twitter-wrapper .tweet-actions li.ic-fav:hover {
+  background-color: #0084b4;
+}
+
+#twitter-wrapper .twitter-actions {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+#twitter-wrapper .tweet-actions {
+  visibility: hidden;
+}
+#twitter-wrapper .tweet:hover .tweet-actions {
+  margin-bottom: 20px;
+  visibility: visible;
+}
+#twitter-wrapper .more-info {
+  clear: both;
+}
+#twitter-wrapper .more-info .info {
+  display: none;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #e8e8e8;
+  color: #707070;
+  font-size: 10px;
+}
+#twitter-wrapper .more-info .info strong {
+  font-size: 12px;
+}
+#twitter-wrapper .more-info .title {
+  cursor: pointer;
+  color: #707070;
+  display: inline;
+}
+#twitter-wrapper .more-info .title:hover {
+  text-decoration: underline;
+  color: #0084b4;
+  display: inline;
+}
+.twitter-bottom {
+  height: 44px;
+  background-color: #FFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #e8e8e8;
+}
+#custom-tweet-button {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+#custom-tweet-button a {
+  display: block;
+  text-decoration: none;
+  outline: 0;
+  color: #707070;
+  display: block;
+  padding: 6px;
+  text-align: left;
+  background: #fff;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+}

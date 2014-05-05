@@ -1,0 +1,8 @@
+twitter_block_templates.task: # The first plugin ID
+  title: 'Templates'
+  route_name: twitter_block_templates
+  base_route: twitter_block_templates
+twitter_block_settings.task: # The second plugin ID
+  title: 'Twitter Settings'
+  route_name: twitter_block_settings
+  base_route: twitter_block_templates

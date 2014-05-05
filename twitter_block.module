@@ -1,0 +1,48 @@
+<?php
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+/**
+ * Implements hook_theme().
+ */
+function twitter_block_theme() {
+  $templates = twitter_block_scanTemplates();
+  $theme = array();
+  foreach ($templates as $key => $value) {
+    $theme[$value.'_block'] = array(
+      'variables' => array(
+        'username' => NULL,
+        'tweets' => NULL
+      ),
+      'template' => format_string('@s/@s', array('@s' => $value)),
+      'file' => 'twitter.pages.inc'
+    );
+  }
+
+  $theme['twitter_setting_default'] = array(
+    'template' => 'twitter-setting-default',
+  );
+
+  return $theme;
+}
+// Get available templates.
+function twitter_block_scanTemplates() {
+  $results = array();
+  // Get module directory.
+  $dir = drupal_get_path('module', 'twitter_block');
+  // Change found directory to templates folder.
+  $dir .= '/templates';
+  // Scan folder for template files.
+  $templates = scandir($dir);
+  $end = count($templates);
+  // Skip first two rubbish entries. ('.', '..').
+  for ($i = 2; $i < $end; $i++) {
+    $key = $templates[$i];
+    //$value = preg_replace('/.html.twig/', '', $templates[$i]);
+    // System name will be full template name while visible
+    // value for humans are without extension.
+    $results[$key] = $key;
+  }
+
+  return $results;
+}

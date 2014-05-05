@@ -1,0 +1,4 @@
+name: Twitter Block
+type: module
+description: Creates Twitter block with multiple feeds.
+core: 8.x
